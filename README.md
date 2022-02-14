@@ -1,3 +1,10 @@
+# vi
+## copy characters
+With the cursor on the first character, `v` then move to select text. `y` to yank.
+## turn off highlighting from last search
+```
+:noh
+```
 # git
 ## Delete a local branch
 ```
