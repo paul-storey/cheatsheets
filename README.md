@@ -36,5 +36,6 @@ docker stop $(docker ps -q)
 ```
 ## Remove stopped containers
 ```
-docker rm $(docker ps --filter status=exited -q)
+docker --volumes rm $(docker ps --filter status=exited -q)
 ```
+Use `--volumes` to remove associated anonymous volumes
