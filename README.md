@@ -38,4 +38,9 @@ docker stop $(docker ps -q)
 ```
 docker --volumes rm $(docker ps --filter status=exited -q)
 ```
-Use `--volumes` to remove associated anonymous volumes
+Use `--volumes` to remove associated anonymous volumes.
+
+Alternatively
+```
+docker system prune
+```
