@@ -5,6 +5,10 @@ With the cursor on the first character, `v` then move to select text. `y` to yan
 ```
 :noh
 ```
+## Tabs
+```
+set tabstop=4 shiftwidth=4 expandtab
+```
 # git
 ## Delete a local branch
 ```
