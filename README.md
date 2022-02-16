@@ -1,3 +1,13 @@
+# tcpdump
+## Use -A for ascii output
+``` 
+tcpdump -A -i any  port 8080
+```
+## Another example
+```
+tcpdump -i any -nntX port 80
+```
+Refer to [Daniel Miessler's tutorial](https://danielmiessler.com/study/tcpdump/).
 # vi
 ## copy characters
 With the cursor on the first character, `v` then move to select text. `y` to yank.
