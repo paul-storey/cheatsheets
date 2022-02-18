@@ -1,3 +1,10 @@
+# tmux
+- `Ctrl-B %` for a vertical split (one shell on the left, one shell on the right)
+- `Ctrl-B"` for a horizontal split (one shell at the top, one shell at the bottom)
+- `Ctrl-B` O to make the other shell active
+- `Ctrl-B ?` for help
+- `Ctrl-B d` detach from Tmux, leaving it running in the background (use tmux attach to reenter)
+
 # tcpdump
 ## Use -A for ascii output
 ``` 
