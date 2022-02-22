@@ -116,7 +116,7 @@ With the cursor on the first character, `v` then move to select text. `y` to yan
 ```
 :noh
 ```
-### List colors
+## List colors
 ```
 ls -l /usr/share/vim/vim*/colors
 ```
