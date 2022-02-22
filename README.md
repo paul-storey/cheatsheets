@@ -102,6 +102,14 @@ Refer to [Daniel Miessler's tutorial](https://danielmiessler.com/study/tcpdump/)
 - `Ctrl-B d` detach from Tmux, leaving it running in the background (use tmux attach to reenter)
 
 # vi
+## auto-indent off when pasting
+```
+:set paste
+```
+and, when done:
+```
+:set nopaste
+```
 ## copy characters
 With the cursor on the first character, `v` then move to select text. `y` to yank.
 ## turn off highlighting from last search
