@@ -116,6 +116,14 @@ With the cursor on the first character, `v` then move to select text. `y` to yan
 ```
 :noh
 ```
+### List colors
+```
+ls -l /usr/share/vim/vim*/colors
+```
+To apply:
+```
+:color elflord
+```
 ## Tabs
 ```
 set tabstop=4 shiftwidth=4 expandtab
