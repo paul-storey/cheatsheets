@@ -102,6 +102,12 @@ Refer to [Daniel Miessler's tutorial](https://danielmiessler.com/study/tcpdump/)
 - `Ctrl-B d` detach from Tmux, leaving it running in the background (use tmux attach to reenter)
 
 # vi
+## apply edit on multiple lines
+1. Select the lines: `Ctl-v` to enter selection mode, then the usual keys eg `j` or `G` to select 
+a block of lines.
+2. Perform the edit eg `I` to insert at the beginning of the line. Note that, at this point, the UI may not show the 
+effects of the edit for the whole block.
+3. `Esc` when done
 ## auto-indent off when pasting
 ```
 :set paste
