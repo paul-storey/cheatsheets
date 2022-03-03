@@ -82,6 +82,14 @@ Run pydoc
 ```
 python -m pydoc -b
 ```
+Embedding an interactive shell
+```
+import code
+variables = globals().copy()
+variables.update(locals())
+shell = code.InteractiveConsole(variables)
+shell.interact()
+```
 
 # tcpdump
 ## Use -A for ascii output
