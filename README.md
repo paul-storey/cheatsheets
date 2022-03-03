@@ -78,11 +78,11 @@ git push -u origin new-branch
 ```
 
 # Python
-Run pydoc
+## Run pydoc
 ```
 python -m pydoc -b
 ```
-[Embedding an interactive shell](https://stackoverflow.com/questions/5597836/embed-create-an-interactive-python-shell-inside-a-python-program)
+## [Embedding an interactive shell](https://stackoverflow.com/questions/5597836/embed-create-an-interactive-python-shell-inside-a-python-program)
 ```
 import code
 variables = globals().copy()
