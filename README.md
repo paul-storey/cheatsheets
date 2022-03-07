@@ -76,6 +76,8 @@ The following command creates a remote branch and creates an association between
 ```
 git push -u origin new-branch
 ```
+# ISO dates
+1BC is `+0000` and 2BC is `-0001`
 
 # Python
 ## Run pydoc
