@@ -110,6 +110,7 @@ Refer to [Daniel Miessler's tutorial](https://danielmiessler.com/study/tcpdump/)
 - `Ctrl-B o` to make the **o**ther shell active
 - `Ctrl-B ?` for help
 - `Ctrl-B d` detach from Tmux, leaving it running in the background (use tmux attach to reenter)
+- `Ctrl-B x` to close the current pane
 
 # vi
 ## apply edit on multiple lines
