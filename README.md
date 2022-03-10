@@ -133,6 +133,11 @@ With the cursor on the first character, `v` then move to select text. `y` to yan
 ```
 :noh
 ```
+Also, the following might help to stop vim from highlighting every occurrence
+of a match after doing a substitution:
+```
+:set nohlsearch
+```
 ## List colors
 ```
 ls -l /usr/share/vim/vim*/colors
