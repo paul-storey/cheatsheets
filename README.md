@@ -117,6 +117,7 @@ Refer to [Daniel Miessler's tutorial](https://danielmiessler.com/study/tcpdump/)
 - `Ctrl-B ?` for help
 - `Ctrl-B d` detach from Tmux, leaving it running in the background (use tmux attach to reenter)
 - `Ctrl-B x` to close the current pane
+- `Ctrl-B {` to rotate panes
 
 # vi
 ## apply edit on multiple lines
