@@ -99,6 +99,12 @@ shell = code.InteractiveConsole(variables)
 shell.interact()
 ```
 
+## reload a module
+```
+from importlib import reload
+reload(math)
+```
+
 # tcpdump
 ## Use -A for ascii output
 ``` 
