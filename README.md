@@ -79,6 +79,12 @@ git push -u origin new-branch
 # ISO dates
 1BC is `+0000` and 2BC is `-0001`
 
+# netstat
+netstat example on Windows:
+```
+netstat -aon | find /i ":25"
+```
+
 # Poetry
 To make a poetry project out of an existing project
 ```
