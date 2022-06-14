@@ -131,6 +131,60 @@ Refer to [Daniel Miessler's tutorial](https://danielmiessler.com/study/tcpdump/)
 - `Ctrl-B x` to close the current pane
 - `Ctrl-B {` to rotate panes
 
+# vagrant
+Generate a new Vagrantfile:
+```
+vagrant init
+```
+List available boxes
+```
+vagrant box list
+```
+Add a box. 
+
+First, [find a box](https://app.vagrantup.com/boxes/search). Then use the following command to add it.
+```
+vagrant add "centos/7"
+```
+Provision and start VMs
+```
+vagrant up
+```
+Stop and get rid of everything:
+```
+vagrant destroy
+```
+To list VMs
+```
+vagrant status
+```
+To SSH to a VM
+```
+vagrant ssh vagrant_name_for_vm
+```
+Example VM definition
+```
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+# General Vagrant VM configuration.
+# config.vm.box = "ansible.box"
+config.ssh.insert_key = false
+config.vm.synced_folder ".", "/vagrant", disabled: true
+config.vm.provider :virtualbox do |v|
+v.memory = 512
+v.linked_clone = true
+end
+
+# Ansible Controller
+config.vm.define "controller" do |controller|
+controller.vm.box = "centos/7"
+controller.vm.hostname = "controller.test"
+controller.vm.network :private_network, ip: "192.168.60.4"
+end
+end
+```
+
 # vi
 ## apply edit on multiple lines
 1. Select the lines: `Ctl-v` to enter selection mode, then the usual keys eg `j` or `G` to select 
