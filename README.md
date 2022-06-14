@@ -111,6 +111,21 @@ from importlib import reload
 reload(math)
 ```
 
+# sudo
+Add a new user
+```
+sudo adduser yoda
+```
+Define a password for this user
+```
+sudo passwd yoda
+```
+Add user to the sudo group
+```
+sudo usermod -aG wheel yoda
+```
+To enable sudo without needing to provide a password, `sudo visudo`, uncomment the line which follows the comment *same thing without a password*.
+
 # tcpdump
 ## Use -A for ascii output
 ``` 
