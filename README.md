@@ -179,6 +179,10 @@ Provision and start VMs
 ```
 vagrant up
 ```
+Stop the VMs
+```
+vagrant halt
+```
 Stop and get rid of everything:
 ```
 vagrant destroy
