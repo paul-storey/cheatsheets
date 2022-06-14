@@ -111,6 +111,20 @@ from importlib import reload
 reload(math)
 ```
 
+# ssh
+To enable password-based ssh connection, `sudo vi /etc/ssh/sshd_config` and change `PasswordAuthentication` from 'no' to 'yes'. Then `sudo systemctl restart sshd`.
+
+To generate SSH key pair:
+```
+ssh-keygen -t rsa -b 2048
+```
+
+To copy a public key to another machine:
+```
+ssh-copy-id user@target
+```
+(This will prompt for password for access to target). The effect of this command is to append the public key to `authorized_keys`.
+
 # sudo
 Add a new user
 ```
