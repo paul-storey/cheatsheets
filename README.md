@@ -84,6 +84,10 @@ netstat example on Windows:
 ```
 netstat -aon | find /i ":25"
 ```
+netstat isn't always available on Linux. Try:
+```
+sudo ss -tunlp
+```
 
 # Poetry
 To make a poetry project out of an existing project
