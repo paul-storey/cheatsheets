@@ -115,6 +115,26 @@ from importlib import reload
 reload(math)
 ```
 
+# screen
+
+`Ctrl+a` `c` Create a new window (with shell).
+
+`Ctrl+a` `S` Split current region horizontally into two regions.
+
+`Ctrl+a` `|` Split current region vertically into two regions.
+
+`Ctrl+a` `tab` Switch the input focus to the next region.
+
+`Ctrl+a` `X` Close the current region.
+
+`Ctrl+a` `d` Detach
+
+`screen -r` to resume
+
+`screen -ls` to list sessions
+
+
+
 # ssh
 To enable password-based ssh connection, `sudo vi /etc/ssh/sshd_config` and change `PasswordAuthentication` from 'no' to 'yes'. Then `sudo systemctl restart sshd`.
 
