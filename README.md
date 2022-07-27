@@ -117,6 +117,8 @@ reload(math)
 
 # screen
 
+`screen -S session_name` Start screen with the specified name, in a new shell
+
 `Ctrl+a` `c` Create a new window (with shell).
 
 `Ctrl+a` `S` Split current region horizontally into two regions.
