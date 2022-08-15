@@ -71,6 +71,11 @@ if the file is already staged
 ```
 git diff --cached PATH_TO_FILE
 ```
+## Undo all unstaged modifications
+For more recent versions of git: `git restore .`
+
+For older versions of git: `git checkout -- .`
+
 ## Push a (new) local branch to the remote
 The following command creates a remote branch and creates an association between the local and the remote branch. This means that one can subsequently simply run 'git push' or 'git pull' without having to care about specifying branch)
 ```
