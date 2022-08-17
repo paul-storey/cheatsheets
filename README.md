@@ -140,7 +140,11 @@ reload(math)
 
 `screen -ls` to list sessions
 
-
+# solr
+Delete all docs
+```
+curl -X POST -H 'Content-Type: application/json' --data-binary '{"delete":{"query":"*:*" }}' http://localhost:8983/solr/my_collection/update
+```
 
 # ssh
 To enable password-based ssh connection, `sudo vi /etc/ssh/sshd_config` and change `PasswordAuthentication` from 'no' to 'yes'. Then `sudo systemctl restart sshd`.
