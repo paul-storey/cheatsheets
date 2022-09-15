@@ -291,4 +291,5 @@ To apply:
 ```
 set tabstop=4 shiftwidth=4 expandtab
 ```
-
+## Vertical split
+With `Ctl-w` pressed, hit `v`
