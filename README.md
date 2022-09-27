@@ -29,6 +29,17 @@ from airflow.models import Variable
 foo = Variable.get("foo")
 ```
 
+# bash
+## Example of using an array
+```
+#!/bin/bash
+files=("111.xml" "1110.xml" "1111.xml" "1112.xml" "1113.xml")
+for file in "${files[@]}"
+do
+    echo ${file}
+done
+```
+
 # docker
 ## Bring services down and removal all trace of them
 ```
