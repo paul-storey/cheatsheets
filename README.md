@@ -82,6 +82,10 @@ if the file is already staged
 ```
 git diff --cached PATH_TO_FILE
 ```
+## Diff for review
+```
+git log -p
+```
 ## Undo all unstaged modifications
 For more recent versions of git: `git restore .`
 
