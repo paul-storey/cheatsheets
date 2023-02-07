@@ -64,6 +64,14 @@ Alternatively
 docker system prune
 ```
 
+# GIMP
+## Highlight part of an image
+1. Open the image in GIMP
+2. Use the select tool to select a region
+3. Select the Bucket Fill Tool
+4. Select the foreground colour
+5. Specify 30 as the Opacity for the Bucket Fill Tool Options.
+6. Click within the region
 # git
 ## Delete a local branch
 ```
