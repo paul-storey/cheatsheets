@@ -124,6 +124,11 @@ poetry init
 ```
 
 # Python
+## Debug FastAPI
+Add this line of code:
+```
+import pdb; pdb.set_trace()
+```
 ## Run pydoc
 ```
 python -m pydoc -b
