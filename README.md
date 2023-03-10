@@ -223,6 +223,8 @@ Refer to [Daniel Miessler's tutorial](https://danielmiessler.com/study/tcpdump/)
 - `Ctrl-B x` to close the current pane
 - `Ctrl-B {` to rotate panes
 
+To start a new tmux server, use `tmux -L [name]`. This is useful if you've already got tmux running in one terminal and you want to run tmux in a second terminal but, in the second case, you don't want your processes to inherit the environment that they would inherit were they to use the tmux server associated with the first.
+
 # vagrant
 Generate a new Vagrantfile:
 ```
