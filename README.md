@@ -153,6 +153,10 @@ reload(math)
 sudo firewall-cmd --permanent --zone=public --add-service=http
 sudo firewall-cmd --reload
 ```
+## enable traffic on a particular port
+```
+sudo firewall-cmd --zone=public --add-port=6363/tcp --permanent
+```
 
 # screen
 
