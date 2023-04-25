@@ -141,11 +141,17 @@ variables.update(locals())
 shell = code.InteractiveConsole(variables)
 shell.interact()
 ```
-
 ## reload a module
 ```
 from importlib import reload
 reload(math)
+```
+
+# redhat
+## enable HTTP traffic
+```
+sudo firewall-cmd --permanent --zone=public --add-service=http
+sudo firewall-cmd --reload
 ```
 
 # screen
