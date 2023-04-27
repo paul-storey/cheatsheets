@@ -122,6 +122,10 @@ To make a poetry project out of an existing project
 ```
 poetry init
 ```
+If `poetry install` gives you a 'keyring' prompt (*An application wants to create a new keyring called Default. Choose the password you want to use for it.*), this appears to be a [known issue](https://github.com/python-poetry/poetry/issues/1917) and may be circumvented as follows:
+```
+export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
+```
 
 # Python
 ## Debug FastAPI
