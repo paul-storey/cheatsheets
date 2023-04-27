@@ -244,6 +244,19 @@ Refer to [Daniel Miessler's tutorial](https://danielmiessler.com/study/tcpdump/)
 
 To start a new tmux server, use `tmux -L [name]`. This is useful if you've already got tmux running in one terminal and you want to run tmux in a second terminal but, in the second case, you don't want your processes to inherit the environment that they would inherit were they to use the tmux server associated with the first.
 
+# top
+`M` - sort by memory usage
+
+`P` - sort by CPU usage
+
+`E` - change unit in which memory usage is reported
+
+`c` - show full paths of processes
+
+`m` - cycle through alternative displays for memory usage
+
+`t` - do the same for CPU usage
+
 # vagrant
 Generate a new Vagrantfile:
 ```
