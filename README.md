@@ -157,6 +157,11 @@ sudo firewall-cmd --reload
 ```
 sudo firewall-cmd --zone=public --add-port=6363/tcp --permanent
 ```
+## use alternatives to configure python3
+```
+sudo alternatives --install $(which python3) python3 $(which python3.8) 1
+sudo alternatives --config python3
+```
 
 # screen
 
