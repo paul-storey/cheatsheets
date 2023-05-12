@@ -39,6 +39,15 @@ do
     echo ${file}
 done
 ```
+## Pulling in values from a file
+```
+#!/bin/bash
+input="temp/my.file"
+while IFS= read -r line
+do
+    echo "${line}"
+done < "${input}"
+```
 
 # docker
 ## Bring services down and removal all trace of them
