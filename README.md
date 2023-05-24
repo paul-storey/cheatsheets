@@ -90,6 +90,10 @@ git branch -d name-of-branch
 ```
 git push origin --delete new-branch
 ```
+## Disable escaping of unicode multibyte characters in path names
+```
+git config --global core.quotePath false
+```
 ## Diff before commit
 if the file has not yet been added...
 ```
