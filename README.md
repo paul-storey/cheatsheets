@@ -111,6 +111,7 @@ git log -p
 ```
 git difftool --tool=vimdiff 848916a
 ````
+This uses 2 panes. The left shows the version at the specified commit. The right shows HEAD.
 ## Undo all unstaged modifications
 For more recent versions of git: `git restore .`
 
