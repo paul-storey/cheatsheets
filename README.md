@@ -107,6 +107,10 @@ git diff --cached PATH_TO_FILE
 ```
 git log -p
 ```
+## Using vimdiff
+```
+git difftool --tool=vimdiff 848916a
+````
 ## Undo all unstaged modifications
 For more recent versions of git: `git restore .`
 
