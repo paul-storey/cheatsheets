@@ -107,11 +107,29 @@ git diff --cached PATH_TO_FILE
 ```
 git log -p
 ```
-## Using vimdiff
+## difftool
+`git difftool` allows a side-by-side comparison.
+
+One option is to use vimdiff, although configuring the diff in vim can be tricky.
 ```
 git difftool --tool=vimdiff 848916a
 ````
 This uses 2 panes. The left shows the version at the specified commit. The right shows HEAD.
+
+Alternatively, install [meld](http://meldmerge.org/), edit `.gitconfig` as follows:
+```
+# Add the following to your .gitconfig file.
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+```
+and then
+```
+git difftool 848916a
+```
 ## Undo all unstaged modifications
 For more recent versions of git: `git restore .`
 
