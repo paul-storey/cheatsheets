@@ -169,6 +169,13 @@ Add this line of code:
 ```
 import pdb; pdb.set_trace()
 ```
+## Break into pdb on exception
+```
+try:
+    stuff()
+except Exception:
+    import pdb; pdb.post_mortem()
+```
 ## Run pydoc
 ```
 python -m pydoc -b
