@@ -143,6 +143,11 @@ git push -u origin new-branch
 # ISO dates
 1BC is `+0000` and 2BC is `-0001`
 
+# nc
+connect to port 42 on the specified host, giving up after 5 seconds
+```
+nc -w 5 host.example.com 42
+```
 # netstat
 netstat example on Windows:
 ```
