@@ -281,6 +281,14 @@ tcpdump -i any -nntX port 80
 ```
 Refer to [Daniel Miessler's tutorial](https://danielmiessler.com/study/tcpdump/).
 
+## Test if packets are arriving from a particular source
+```
+tcpdump -i any src 192.168.60.5
+```
+This is useful to verify whether or not it's the host firewall that's causing
+connection rejections - because tcpdump still 'sees' the arriving packets,
+despite the fact the firewall is going to reject them.
+
 # tmux
 - `Ctrl-B %` for a vertical split (one shell on the left, one shell on the right)
 - `Ctrl-B"` for a horizontal split (one shell at the top, one shell at the bottom)
