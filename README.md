@@ -300,6 +300,17 @@ despite the fact the firewall is going to reject them.
 
 To start a new tmux server, use `tmux -L [name]`. This is useful if you've already got tmux running in one terminal and you want to run tmux in a second terminal but, in the second case, you don't want your processes to inherit the environment that they would inherit were they to use the tmux server associated with the first.
 
+## tmux session management
+```
+tmux new-session -s my-session-name
+```
+```
+tmux list-sessions
+```
+```
+tmux attach-session -t my-session-name
+```
+
 # top
 `M` - sort by memory usage
 
