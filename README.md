@@ -310,6 +310,7 @@ tmux list-sessions
 ```
 tmux attach-session -t my-session-name
 ```
+To detach: `Ctrl-B` then `D`
 
 # top
 `M` - sort by memory usage
