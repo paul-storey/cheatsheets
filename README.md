@@ -255,6 +255,11 @@ ssh-copy-id user@target
 ```
 (This will prompt for password for access to target). The effect of this command is to append the public key to `authorized_keys`.
 
+Port forwarding example:
+```
+ssh -L 8008:127.0.0.1:8008 user@host
+```
+
 # sudo
 Add a new user
 ```
