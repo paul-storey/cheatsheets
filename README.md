@@ -260,6 +260,20 @@ Port forwarding example:
 ssh -L 8008:127.0.0.1:8008 user@host
 ```
 
+Test ssh connection:
+```
+ssh -v -T git@gitlab.bodleian.ox.ac.uk
+```
+From the output it is possible to see which SSH keys are being offered to the host.
+Sometimes an SSH key is not offered. This can be configured using `~/.ssh/config`.
+Example:
+```
+Host gitlab.bodleian.ox.ac.uk
+    IdentityFile C:\Users\paulb/.ssh/id_ed25519_bod_gitlab
+    IdentitiesOnly yes
+    AddKeysToAgent yes
+```
+
 # sudo
 Add a new user
 ```
