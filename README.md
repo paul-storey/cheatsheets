@@ -49,6 +49,13 @@ do
 done < "${input}"
 ```
 
+# curl
+to include response headers: `-i`
+
+to follow redirects: `-L`
+
+verbose: `-v`
+
 # docker
 ## Bring services down and removal all trace of them
 ```
