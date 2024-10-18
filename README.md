@@ -156,6 +156,12 @@ connect to port 42 on the specified host, giving up after 5 seconds
 nc -w 5 host.example.com 42
 ```
 # netstat
+for TCP: `-t`
+
+to see the process id (pid): `-p`
+
+switch off hostname resolution: `-n` (i.e. *numeric*)
+
 netstat example on Windows:
 ```
 netstat -aon | find /i ":25"
