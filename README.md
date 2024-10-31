@@ -248,6 +248,12 @@ sudo alternatives --config python3
 
 `screen -ls` to list sessions
 
+# sed
+sed example using character classes and references to matched groups
+```
+sed 's/.*\/\([[:alnum:]_]*\.xml\):.*id="\(manuscript_[[:digit:]]*\)".*/\1:\2/'
+```
+
 # solr
 Delete all docs
 ```
