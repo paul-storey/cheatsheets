@@ -56,6 +56,10 @@ to follow redirects: `-L`
 
 verbose: `-v`
 
+output to file: `--output my.file`
+
+add a header: `-H "accepting-encoding: deflate, br"`
+
 # docker
 ## Bring services down and removal all trace of them
 ```
