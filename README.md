@@ -297,6 +297,11 @@ Host gitlab.bodleian.ox.ac.uk
     AddKeysToAgent yes
 ```
 
+Get the fingerprint of a public key
+```
+ssh-keygen -l -E md5 -f ./id_ed25519.pub
+```
+
 # sudo
 Add a new user
 ```
