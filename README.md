@@ -154,6 +154,12 @@ git push -u origin new-branch
 # ISO dates
 1BC is `+0000` and 2BC is `-0001`
 
+# JSON
+How to pretty print JSON on the command line
+```
+curl "http://host/my.json" | python3 -m json.tool
+```
+
 # nc
 connect to port 42 on the specified host, giving up after 5 seconds
 ```
