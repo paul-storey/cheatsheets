@@ -65,6 +65,10 @@ add a header: `-H "accepting-encoding: deflate, br"`
 ```
 docker-compose down --volumes --remove-orphans
 ```
+## Get last 5 minutes of logging activity for a container
+```
+docker logs --since 5m my-container
+```
 ## Get the IP address of a container
 ```
 docker inspect mynginx | grep IPAddress
