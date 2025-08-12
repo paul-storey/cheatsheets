@@ -184,6 +184,11 @@ netstat isn't always available on Linux. Try:
 ```
 sudo ss -tunlp
 ```
+# Pipenv
+How to sync a single dependency - and that dependency is versioned by repository branch
+```
+pipenv uninstall my-dependency && pipenv install git+ssh://git@gitlab.etc/etc/my-dependency.git@my-branch#egg=my-dependency
+```
 
 # Poetry
 To make a poetry project out of an existing project
