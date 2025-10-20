@@ -145,6 +145,16 @@ and then
 ```
 git difftool 848916a
 ```
+
+## Tagging
+```
+git tag -a v1.4 -m "my version 1.4"
+```
+You have to explicitly push tags to a shared server after you have created them. 
+```
+git push origin <tagname>
+```
+
 ## Undo all unstaged modifications
 For more recent versions of git: `git restore .`
 
