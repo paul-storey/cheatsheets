@@ -240,6 +240,13 @@ shell.interact()
 from importlib import reload
 reload(math)
 ```
+## Write to a file from within pdb
+```
+(Pdb) from pprint import pprint as ppr
+(Pdb) file = open("x.txt", "wt")
+(Pdb) ppr("mystuff", stream=file)
+```
+(thanks to https://stackoverflow.com/a/73831208)
 
 # redhat
 ## enable HTTP traffic
