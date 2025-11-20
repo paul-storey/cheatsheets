@@ -240,6 +240,22 @@ shell.interact()
 from importlib import reload
 reload(math)
 ```
+## requests without requests
+An example of making HTTP requests using the standard library:
+```python
+import http.client
+from urllib.parse import urlencode
+client = http.client.HTTPConnection("127.0.0.1", 8983)
+query_params = {
+    "param_a": "a",
+    "param_b": "b",
+}
+url = "/a/b/c?" + urlencode(query_params)
+client.request("GET", url)
+response = client.getresponse()
+if response.status == 200:
+    print(str(response.read(), encoding="UTF-8"))
+```
 ## Write to a file from within pdb
 ```
 (Pdb) from pprint import pprint as ppr
