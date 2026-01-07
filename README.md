@@ -312,6 +312,9 @@ Delete all docs
 curl -X POST -H 'Content-Type: application/json' --data-binary '{"delete":{"query":"*:*" }}' http://localhost:8983/solr/my_collection/update
 ```
 
+To search for docs which **lack** a certain field, add the field name to the filter query parameter, preceded by a minus sign and, for the value, use `["" TO *]` e.g. `-myfield_s:["" TO *]`
+(This example is based on a field that is **not** `multiValued` and is of type `solr.StrField`.)
+
 # ssh
 To enable password-based ssh connection, `sudo vi /etc/ssh/sshd_config` and change `PasswordAuthentication` from 'no' to 'yes'. Then `sudo systemctl restart sshd`.
 
