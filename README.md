@@ -39,6 +39,19 @@ do
     echo ${file}
 done
 ```
+## Example of using an associative array
+```
+#!/bin/bash
+declare -A pets
+pets["tibbles"]="cat"
+pets["rover"]="dog"
+pets["nemo"]="fish"
+for petname in "${!pets[@]}"
+do  
+    species=${pets[${petname}]}
+    echo "${petname} is a ${species}"
+done
+```
 ## Pulling in values from a file
 ```
 #!/bin/bash
