@@ -28,6 +28,19 @@ from airflow.models import Variable
 
 foo = Variable.get("foo")
 ```
+# awk
+Use awk to print a 20 character substring of line 383, starting with the character at position 651870:
+```
+cat my.file |awk '
+  {
+        if ( NR== 383 ){
+          print substr($0, 651870, 20)
+        }
+  }
+  END{
+  }
+'
+```
 
 # bash
 ## Example of using an array
