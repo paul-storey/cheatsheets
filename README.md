@@ -75,6 +75,13 @@ do
 done < "${input}"
 ```
 
+## Using bash like telnet/netcat
+
+This example sends the 'stats' command to memcached
+```
+exec 3<>/dev/tcp/localhost/11211; printf "stats\nquit\n" >&3; cat <&3
+```
+
 # curl
 to include response headers: `-i`
 
@@ -205,6 +212,13 @@ connect to port 42 on the specified host, giving up after 5 seconds
 ```
 nc -w 5 host.example.com 42
 ```
+
+Another netcat example - sending the 'stats' command to memcached:
+```
+echo stats | nc 127.0.0.1 11211
+```
+This kind of thing can also be done using bash - see the 'bash' section.
+
 # netstat
 for TCP: `-t`
 
